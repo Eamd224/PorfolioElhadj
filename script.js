@@ -2,8 +2,7 @@ function toggleMenu(){
     const menu = document.querySelector('.menu-links');
     const icon = document.querySelector('.deroulant-icon');
     menu.classList.toggle('open');
-    icon.classList.toggle('open');
-    
+    icon.classList.toggle('open');   
 }
 
 // mode sombre et clair
@@ -30,12 +29,12 @@ toggleButton.addEventListener("click", () => {
 });
 
 
-// Fonction pour ouvrir la modale de la vidéo
+// Fonction pour ouvrir la modale de la vidéo spotify
 function openVideoModal() {
   document.getElementById('videoModal').style.display = 'block';
 }
 
-// Fonction pour fermer la modale de la vidéo
+// Fonction pour fermer la modale de la vidéo spotify
 function closeVideoModal(event) {
   if (event) {
     event.preventDefault();
@@ -56,28 +55,15 @@ function closeModal(event) {
   document.getElementById('gameModal').style.display = 'none';
 }
 
-
-// // Fonction pour ouvrir la modal du Projet 1
-// function openModalProject1() {
-//   document.getElementById("gameModalProject1").style.display = "block";
-// }
-
-// // Fonction pour fermer la modal du Projet 1
-// function closeModalProject1(event) {
-//   if (event.target === document.getElementById("gameModalProject1") || event.target === document.querySelector(".close")) {
-//     document.getElementById("gameModalProject1").style.display = "none";
-//   }
-// }
-
-// Fonction pour ouvrir la modal du projet 1
+// Fonction pour ouvrir la modal du projet netflix
 function openModalProject1() {
   document.getElementById('gameModalProject1').style.display = 'block';
 }
 
-// Fonction pour fermer la modal du projet 1
+// Fonction pour fermer la modal du projet netflix
 function closeModalProject1(event) {
   if (event) {
-    event.stopPropagation(); // Empêche la propagation de l'événement de clic
+    event.stopPropagation(); 
   }
   document.getElementById('gameModalProject1').style.display = 'none';
 }
