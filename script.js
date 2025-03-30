@@ -28,3 +28,31 @@ toggleButton.addEventListener("click", () => {
     toggleButton.textContent = "🌙 Mode Sombre";
   }
 });
+
+
+// Fonction pour ouvrir la modale de la vidéo
+function openVideoModal() {
+  document.getElementById('videoModal').style.display = 'block';
+}
+
+// Fonction pour fermer la modale de la vidéo
+function closeVideoModal(event) {
+  if (event) {
+    event.preventDefault();
+  }
+  document.getElementById('videoModal').style.display = 'none';
+}
+
+// Ouvrir la modale avec le jeu
+function openModal() {
+  document.getElementById('gameModal').style.display = 'block';
+}
+
+// Fermer la modale
+function closeModal(event) {
+  // Si l'utilisateur clique sur le fond (en dehors du contenu)
+  if (event) {
+    event.stopPropagation(); // Empêche la propagation du clic dans la modale.
+  }
+  document.getElementById('gameModal').style.display = 'none';
+}
