@@ -57,14 +57,27 @@ function closeModal(event) {
 }
 
 
-// Fonction pour ouvrir la modal du Projet 1
+// // Fonction pour ouvrir la modal du Projet 1
+// function openModalProject1() {
+//   document.getElementById("gameModalProject1").style.display = "block";
+// }
+
+// // Fonction pour fermer la modal du Projet 1
+// function closeModalProject1(event) {
+//   if (event.target === document.getElementById("gameModalProject1") || event.target === document.querySelector(".close")) {
+//     document.getElementById("gameModalProject1").style.display = "none";
+//   }
+// }
+
+// Fonction pour ouvrir la modal du projet 1
 function openModalProject1() {
-  document.getElementById("gameModalProject1").style.display = "block";
+  document.getElementById('gameModalProject1').style.display = 'block';
 }
 
-// Fonction pour fermer la modal du Projet 1
+// Fonction pour fermer la modal du projet 1
 function closeModalProject1(event) {
-  if (event.target === document.getElementById("gameModalProject1") || event.target === document.querySelector(".close")) {
-    document.getElementById("gameModalProject1").style.display = "none";
+  if (event) {
+    event.stopPropagation(); // Empêche la propagation de l'événement de clic
   }
+  document.getElementById('gameModalProject1').style.display = 'none';
 }
