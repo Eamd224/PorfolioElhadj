@@ -50,9 +50,8 @@ function openModal() {
 
 // Fermer la modale
 function closeModal(event) {
-  // Si l'utilisateur clique sur le fond (en dehors du contenu)
   if (event) {
-    event.stopPropagation(); // Empêche la propagation du clic dans la modale.
+    event.stopPropagation(); 
   }
   document.getElementById('gameModal').style.display = 'none';
 }
