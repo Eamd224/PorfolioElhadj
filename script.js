@@ -56,3 +56,16 @@ function closeModal(event) {
   }
   document.getElementById('gameModal').style.display = 'none';
 }
+
+
+// Fonction pour ouvrir la modal du Projet 1
+function openModalProject1() {
+  document.getElementById("gameModalProject1").style.display = "block";
+}
+
+// Fonction pour fermer la modal du Projet 1
+function closeModalProject1(event) {
+  if (event.target === document.getElementById("gameModalProject1") || event.target === document.querySelector(".close")) {
+    document.getElementById("gameModalProject1").style.display = "none";
+  }
+}
